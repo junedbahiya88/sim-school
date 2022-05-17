@@ -226,11 +226,7 @@ return [
 
     'menu' => [
         // Navbar items:
-        [
-            'text' => 'User',
-            'url'  => '/users',
-            'icon'  => 'fa fa-users',
-        ],
+       
         [
             'type'         => 'navbar-search',
             'text'         => 'search',
@@ -250,6 +246,11 @@ return [
             'text' => 'blog',
             'url'  => 'admin/blog',
             'can'  => 'manage-blog',
+        ],
+        [
+            'text' => 'User',
+            'url'  => '/users',
+            'icon'  => 'fa fa-users',
         ],
         [
             'text'        => 'pages',
