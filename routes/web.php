@@ -29,3 +29,8 @@ Route::get('/home', function() {
 
 Route::resource('users', \App\Http\Controllers\UserController::class)
     ->middleware('auth');
+
+//Rekanan
+Route::get('/rekanans', [App\Http\Controllers\RekananController::class, 'index'])->name('rekanans');
+Route::get('/rekanan_add', [App\Http\Controllers\RekananController::class, 'create'])->name('rekanan.create');
+Route::get('/rekanan_store', [App\Http\Controllers\RekananController::class, 'store'])->name('rekanan.store');

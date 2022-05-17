@@ -248,9 +248,18 @@ return [
             'can'  => 'manage-blog',
         ],
         [
-            'text' => 'User',
-            'url'  => '/users',
-            'icon'  => 'fa fa-users',
+            'text'    => 'Data Master',
+            'icon'    => 'fa fa-users',
+            'submenu' => [
+                [
+                    'text' => 'Rekanan',
+                    'url'  => '/rekanans',                   
+                ],
+                [
+                    'text' => 'User',
+                    'url'  => '/users',
+                ],
+            ],
         ],
         [
             'text'        => 'pages',
